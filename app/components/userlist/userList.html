@@ -1,0 +1,7 @@
+<ul>
+    <li ng-repeat="item in $ctrl.users">
+        {{item.name}} - {{item.email}}
+    </li>
+</ul>
+
+<user-detail ng-repeat="item in $ctrl.users" user="item" number="{{$index}}"></user-detail>
